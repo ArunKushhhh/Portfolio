@@ -54,17 +54,17 @@ const Hero = () => {
         <img
           src={Hehe}
           alt="hehe"
-          className="absolute -top-16 left-4 lg:left-20"
+          className="absolute -top-1 left-[35%] -translate-x-1/2 -translate-y-1/2"
         />
         <img
           src={Starfish}
           alt="starfish"
-          className="absolute bottom-4 left-52 lg:left-72"
+          className="absolute -bottom-0 left-[80%] -translate-x-1/2 -translate-y-1/2"
         />
         <img
           src={Idea}
           alt="idea"
-          className="absolute top-28 lg:top-40 left-1"
+          className="absolute top-[40%] left-[15%] -translate-x-1/2 -translate-y-1/2"
         />
       </div>
     </div>
