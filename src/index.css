@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+/* font-family: "Handlee", cursive; */
+
 @font-face {
     font-family: starife;
     src: url(fonts/StarifeDemo-3z9Y3.otf);
@@ -12,6 +15,7 @@
     font-family: helvetica-R;
     src: url(fonts/helvetica-rounded-bold-5871d05ead8de.otf);
 }
+
 
 @tailwind base;
 @tailwind components;

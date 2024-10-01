@@ -6,11 +6,10 @@ import Frame from "../assets/frame.png";
 import Hehe from "../assets/hehe.svg";
 import Starfish from "../assets/starfish.svg";
 import Idea from "../assets/idea.svg";
-import Profile from "../assets/profile.jpg"
 
 const Hero = () => {
   return (
-    <div className="w-[100%] flex flex-col md:justify-evenly md:flex-row gap-20 justify-center items-center">
+    <div className="w-[100%] flex flex-col sm:justify-evenly sm:flex-row gap-20 justify-center items-center">
       <div className="flex flex-col gap-8">
         <div className="flex gap-4 items-start">
           <img src={Smile} alt="sun_smiles" className="w-[76px]" />
@@ -51,16 +50,22 @@ const Hero = () => {
       </div>
 
       <div className="relative">
-        {/* <img src={Frame} alt="frame" className="sm:w-[300px] lg:w-[400px]"/> */}
-        {/* <img src={Profile} alt="frame" className="absolute top-14 left-10 w-[230px] sm:w-[300px] lg:w-[300px]"/> */}
-        <div className="" style={{
-            backgroundImage:`url(${Frame})`
-        }}>
-            <img src={Profile} alt="" className="w-[230px]" />
-        </div>
-        <img src={Hehe} alt="hehe" className="absolute -top-16 left-4 lg:left-20"/>
-        <img src={Starfish} alt="starfish" className="absolute bottom-4 left-52 lg:left-72"/>
-        <img src={Idea} alt="idea" className="absolute top-28 lg:top-40 left-1"/>
+        <img src={Frame} alt="frame" className="sm:w-[300px] lg:w-[400px]"/>
+        <img
+          src={Hehe}
+          alt="hehe"
+          className="absolute -top-1 left-[35%] -translate-x-1/2 -translate-y-1/2"
+        />
+        <img
+          src={Starfish}
+          alt="starfish"
+          className="absolute -bottom-0 left-[80%] -translate-x-1/2 -translate-y-1/2"
+        />
+        <img
+          src={Idea}
+          alt="idea"
+          className="absolute top-[40%] left-[15%] -translate-x-1/2 -translate-y-1/2"
+        />
       </div>
     </div>
   );
