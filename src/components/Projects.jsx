@@ -1,15 +1,45 @@
+import { useState } from "react";
 import Hireme from "../assets/hireme.svg";
 import Arrow from "../assets/arrow.svg";
-import Cursor from "../assets/cursor.svg";
-import Cursorblue from "../assets/cursorblue.svg";
-import Cursorgreen from "../assets/cursorgreen.svg";
-import Rejouice from "../assets/rejouice_mqup.png";
-import Reverse from "../assets/REVERSE_moqup.png";
-import Sundown from "../assets/sundown_moqup.png";
-import Works from "../assets/works_moqup.png";
-import ProjectCard from "./ProjectCard"; 
+import WebDev from "./WebDev";
+import Design from "./Design";
+import AppDev from "./AppDev";
 
 const Projects = () => {
+  const [activeButton, setActiveButton] = useState("Web Development");
+
+  const buttons = ["Web Development", "Design", "App Development"];
+
+  const handleButtonClick = (label) => {
+    setActiveButton(label);
+  };
+
+  const getButtonBgColor = (label) => {
+    if (label === "Web Development" && activeButton === "Web Development") {
+      return "bg-[#5AB5E8]";
+    }
+    if (label === "Design" && activeButton === "Design") {
+      return "bg-[#FFE68C]";
+    }
+    if (label === "App Development" && activeButton === "App Development") {
+      return "bg-[#F072CD]";
+    }
+    return "bg-transparent";
+  };
+
+  const renderProjects = () => {
+    switch (activeButton) {
+      case "Web Development":
+        return <WebDev />;
+      case "Design":
+        return <Design />;
+      case "App Development":
+        return <AppDev />;
+      default:
+        return <WebDev />;
+    }
+  };
+
   return (
     <div>
       <div className="w-[100%] flex flex-col gap-4 items-start">
@@ -25,44 +55,23 @@ const Projects = () => {
         >
           Featured Projects
         </div>
+        <div className="w-[100%] flex flex-wrap gap-4 sm:justify-center">
+          {buttons.map((label) => (
+            <button
+              key={label}
+              style={{ fontFamily: "Handlee" }}
+              onClick={() => handleButtonClick(label)}
+              className={`text-black font-semibold text-xs sm:text-[14px] px-6 py-3 border border-[#484E53] rounded-full ${getButtonBgColor(
+                label
+              )}`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
         <img src={Arrow} alt="Arrow" />
-        <div className="w-[100%] flex flex-wrap gap-8 justify-evenly">
-          <ProjectCard
-            imageurl1={Rejouice}
-            imageurl2={Cursor}
-            title1="Rejouice"
-            subtitle="Studios"
-            borderColor="border-[#DB4A90]"
-            bgColor="bg-[#F072CD]"
-            cursorbox="HTML/ CSS/ GSAP"
-          />
-          <ProjectCard
-            imageurl1={Works}
-            imageurl2={Cursorblue}
-            title1="Works"
-            subtitle="Studios"
-            borderColor="border-[#1C6AB1]"
-            bgColor="bg-[#5AB5E8]"
-            cursorbox="HTML/ CSS/ GSAP"
-          />
-          <ProjectCard
-            imageurl1={Sundown}
-            imageurl2={Cursorgreen}
-            title1="Sundown"
-            subtitle="Studios"
-            borderColor="border-[#4ED543]"
-            bgColor="bg-[#7CF072]"
-            cursorbox="HTML/ CSS"
-          />
-          <ProjectCard
-            imageurl1={Reverse}
-            imageurl2={Cursor}
-            title1="Reverse"
-            subtitle="7.0"
-            borderColor="border-[#DB4A90]"
-            bgColor="bg-[#F072CD]"
-            cursorbox="HTML/ CSS/ JS"
-          />
+        <div className="w-[100%] flex flex-wrap gap-4 justify-center">
+          {renderProjects()}
         </div>
       </div>
     </div>
