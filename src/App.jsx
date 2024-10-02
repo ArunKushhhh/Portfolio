@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <div className="flex flex-col gap-[120px] w-full px-10 md:px-20 mt-[150px]">
         <Hero />
         <Services />
+        <Projects />
       </div>
     </div>
   );

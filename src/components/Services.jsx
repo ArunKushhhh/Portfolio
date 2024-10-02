@@ -4,11 +4,11 @@ import Pencil from "../assets/pencil.png";
 import Eye from "../assets/eye.png";
 import Star from "../assets/star.png";
 import Flutter from "../assets/flutter_symbol.svg";
-import PropTypes from "prop-types";
 
 const ServiceCard = ({ background, borderColor, rotation, label, labelBackground, icon, title1, title2 }) => (
   <div
-    className={`relative w-[260px] h-[311px] ${background} border-4 ${borderColor} rounded-lg rotate-[${rotation}] flex px-6 items-center`}
+    className={`relative w-[260px] h-[311px] ${background} border-4 ${borderColor} rounded-lg flex px-6 items-center`}
+    style={{ transform: `rotate(${rotation})` }}
   >
     <div
       className={`absolute ${labelBackground} px-2 left-[100%] -translate-x-1/2 top-8 font-bold`}
@@ -29,7 +29,6 @@ const ServiceCard = ({ background, borderColor, rotation, label, labelBackground
 const Services = () => {
   return (
     <div className="flex flex-col gap-1 justify-center items-center">
-      {/* Header Section */}
       <div className="w-[100%] flex flex-col gap-4 items-start">
         <div
           className="inline px-1 py-1 font-semibold text-[20px]"
@@ -46,7 +45,6 @@ const Services = () => {
         <img src={Arrow} alt="Arrow" />
       </div>
 
-      {/* Services Cards Section */}
       <div className="w-[100%] flex justify-center flex-wrap gap-8 sm:justify-evenly">
         <ServiceCard
           background="bg-[#FFE68C]"
@@ -65,8 +63,8 @@ const Services = () => {
           label="Figma"
           labelBackground="bg-[#FFC9F0]"
           icon={Eye}
-          title1="UI and Product"
-          title2="Design"
+          title1="UI and Product Design"
+          title2="Prototyping"
         />
         <ServiceCard
           background="bg-[#FFC9F0]"
