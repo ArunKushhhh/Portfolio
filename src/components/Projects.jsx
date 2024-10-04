@@ -41,7 +41,7 @@ const Projects = () => {
   };
 
   return (
-    <div>
+    <div id="projects">
       <div className="w-[100%] flex flex-col gap-4 items-start">
         <div
           className="inline px-1 py-1 font-semibold text-[20px]"
