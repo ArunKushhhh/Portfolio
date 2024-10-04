@@ -7,6 +7,7 @@ import Reverse from "../assets/REVERSE_moqup.png";
 import Sundown from "../assets/sundown_moqup.png";
 import Works from "../assets/works_moqup.png";
 import ProjectCard from "./ProjectCard";
+import Bars from "../assets/3bars.svg";
 
 const WebDev = () => {
   const projects = [
@@ -95,14 +96,15 @@ const WebDev = () => {
         ))}
       </div>
 
-      <div className="flex justify-center mt-8">
+      <div className="flex gap-0 justify-center mt-8">
         <button
           onClick={handleToggle}
-          className="bg-[#484E53] text-white px-6 py-3 rounded-full font-semibold"
-          style={{ fontFamily: "Handlee" }}
+          className="bg-[#BAE6FF] text-black px-6 py-3 rounded-full border-4 border-black"
+          style={{ fontFamily: "helvetica-R" }}
         >
-          {seeMore ? "See less" : "See more"}
+          {seeMore ? "View Less Projects" : "View All Projects"}
         </button>
+        <img src={Bars} alt="" className="-mb-14" />
       </div>
     </div>
   );

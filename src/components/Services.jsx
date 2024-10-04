@@ -8,7 +8,7 @@ import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
-    <div className="flex flex-col gap-1 justify-center items-center">
+    <div id="services" className="flex flex-col gap-1 justify-center items-center">
       <div className="w-[100%] flex flex-col gap-4 items-start">
         <div
           className="inline px-1 py-1 font-semibold text-[20px]"

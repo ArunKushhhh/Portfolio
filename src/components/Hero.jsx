@@ -37,20 +37,22 @@ const Hero = () => {
           </h1>
         </div>
         <div className="flex gap-0">
-          <button
-            className="bg-[#BAE6FF] px-6 py-3 rounded-full border-4 border-black"
-            style={{
-              fontFamily: "helvetica-R",
-            }}
-          >
-            See Resume
-          </button>
+          <a href="" target="_blank">
+            <button
+              className="bg-[#BAE6FF] px-6 py-3 rounded-full border-4 border-black"
+              style={{
+                fontFamily: "helvetica-R",
+              }}
+            >
+              See Resume
+            </button>
+          </a>
           <img src={Bars} alt="" className="-mb-14" />
         </div>
       </div>
 
       <div className="relative">
-        <img src={Frame} alt="frame" className="sm:w-[300px] lg:w-[400px]"/>
+        <img src={Frame} alt="frame" className="sm:w-[300px] lg:w-[400px]" />
         <img
           src={Hehe}
           alt="hehe"

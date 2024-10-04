@@ -39,11 +39,11 @@ const Navbar = () => {
       <div className="hidden md:flex">
         <ul className="flex gap-5">
           <li>
-            <a href="#home">Home</a>
+            <a onClick={() => window.scrollTo(0, 0)} className="cursor-pointer">Home</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#about">About</a>
-          </li>
+          </li> */}
           <li>
             <a href="#services">Services</a>
           </li>
@@ -95,9 +95,9 @@ const Navbar = () => {
             <li>
               <a href="#home">Home</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#about">About</a>
-            </li>
+            </li> */}
             <li>
               <a href="#services">Services</a>
             </li>
