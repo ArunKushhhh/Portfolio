@@ -41,7 +41,7 @@ const WebDev = () => {
     {
       imageurl1: Rejouice,
       imageurl2: Cursorpurple,
-      title1: "Works",
+      title1: "Rejouice",
       subtitle: "Studios",
       borderColor: "border-[#a08aff]",
       bgColor: "bg-[#E4E1F7]",
