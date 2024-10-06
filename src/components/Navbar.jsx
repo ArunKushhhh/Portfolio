@@ -93,7 +93,7 @@ const Navbar = () => {
           </div>
           <ul className="flex flex-col gap-5 text-white text-lg">
             <li>
-              <a href="#home">Home</a>
+              <a onClick={() => window.scrollTo(0, 0)} className="cursor-pointer">Home</a>
             </li>
             {/* <li>
               <a href="#about">About</a>
