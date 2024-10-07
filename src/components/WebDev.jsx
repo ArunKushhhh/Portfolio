@@ -35,7 +35,7 @@ const WebDev = () => {
       subtitle: "2024",
       borderColor: "border-[#4ED543]",
       bgColor: "bg-[#7CF072]",
-      cursorbox: "React/TailwindCSS",
+      cursorbox: "HTML/ CSS/ JS",
       url: "https://spark2k24-25.netlify.app/", 
     },
     {
