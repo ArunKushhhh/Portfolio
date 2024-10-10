@@ -1,38 +1,38 @@
-import { useState } from "react";
-import Cursor from "../assets/cursor.svg";
-import Unnati from "../assets/unnati.png";
-import ProjectCard from "./ProjectCard";
-import Bars from "../assets/3bars.svg";
+// import { useState } from "react";
+// import Cursor from "../assets/cursor.svg";
+// import Unnati from "../assets/unnati.png";
+// import ProjectCard from "./ProjectCard";
+// import Bars from "../assets/3bars.svg";
 
 const WebDev = () => {
-  const projects = [
-    {
-      imageurl1: Unnati,
-      imageurl2: Cursor,
-      title1: "Unnati",
-      subtitle: "4.0",
-      borderColor: "border-[#DB4A90]",
-      bgColor: "bg-[#F072CD]",
-      cursorbox: "React/TailwindCSS",
-      url: "https://unnati4.netlify.app/", 
-    },
-  ];
+  // const projects = [
+  //   {
+  //     imageurl1: Unnati,
+  //     imageurl2: Cursor,
+  //     title1: "Unnati",
+  //     subtitle: "4.0",
+  //     borderColor: "border-[#DB4A90]",
+  //     bgColor: "bg-[#F072CD]",
+  //     cursorbox: "React/TailwindCSS",
+  //     url: "https://unnati4.netlify.app/", 
+  //   },
+  // ];
 
-  const [visibleProjects, setVisibleProjects] = useState(4);
-  const [seeMore, setSeeMore] = useState(false);
+  // const [visibleProjects, setVisibleProjects] = useState(4);
+  // const [seeMore, setSeeMore] = useState(false);
 
-  const handleToggle = () => {
-    if (seeMore) {
-      setVisibleProjects(4);
-    } else {
-      setVisibleProjects(projects.length); 
-    }
-    setSeeMore(!seeMore); 
-  };
+  // const handleToggle = () => {
+  //   if (seeMore) {
+  //     setVisibleProjects(4);
+  //   } else {
+  //     setVisibleProjects(projects.length); 
+  //   }
+  //   setSeeMore(!seeMore); 
+  // };
 
   return (
     <div>
-      <div className="w-[100%] flex flex-wrap gap-[50px] justify-start">
+      {/* <div className="w-[100%] flex flex-wrap gap-[50px] justify-start">
         {projects.slice(0, visibleProjects).map((project, index) => (
           <a href={project.url} target="_blank" rel="noopener noreferrer" key={index}>
             <ProjectCard
@@ -57,7 +57,9 @@ const WebDev = () => {
           {seeMore ? "View Less Projects" : "View All Projects"}
         </button>
         <img src={Bars} alt="" className="-mb-14" />
-      </div>
+      </div> */}
+
+      App Development Projects available soon.
     </div>
   );
 };
