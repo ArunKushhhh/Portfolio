@@ -59,7 +59,7 @@ const WebDev = () => {
         <img src={Bars} alt="" className="-mb-14" />
       </div> */}
 
-      App Development Projects available soon.
+      App Development Projects will be available soon.
     </div>
   );
 };
